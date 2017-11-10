@@ -3,6 +3,8 @@ import graphqlHTTP from 'express-graphql';
 import mongoose from 'mongoose';
 import schema from './graphql';
 
+var app = express();
+
 // initilize graphql server
 app.use('/graphql', graphqlHTTP(req => ({
     schema,

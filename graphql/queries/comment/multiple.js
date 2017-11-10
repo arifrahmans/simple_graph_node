@@ -13,7 +13,7 @@ export default {
     args : {
         postId : {
             name : 'postId',
-            type : new GraphQLNonNull
+            type : new GraphQLNonNull(GraphQLID)
         }
     },
     resolve (root, params, options) {

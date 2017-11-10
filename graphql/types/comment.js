@@ -1,14 +1,14 @@
 import {
-    GraphQLInputObjectType,
+    GraphQLObjectType,
     GraphQLString,
     GraphQLID,
     GraphQLNonNull
 } from 'graphql';
 
-export default new GraphQLInputObjectType({
+export default new GraphQLObjectType({
     name : 'Comment',
     fields : {
-        _id : {type : GraphQLID},
+        _id : {type : new GraphQLNonNull(GraphQLID)},
         postId : {type : new GraphQLNonNull(GraphQLID)},
         userId : {type : new GraphQLNonNull(GraphQLID)},
         message : {type : GraphQLString},
