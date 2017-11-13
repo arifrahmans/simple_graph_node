@@ -1,0 +1,50 @@
+query
+{
+  posts{
+    _id
+    title
+    description
+  }
+}
+
+# mutation {
+#   addUser(data:{
+#     name :"oi oi",
+#     password : "joss",
+#     email : "aa@aa.com"
+#   })
+# }
+
+# query{
+#   users{
+#     _id
+#     name
+#     password
+#     email
+#   }
+# }
+
+# query{
+#   user(id : "5a099998c0f6a20c44149b0a") {
+#     _id
+#     name
+#     password
+#     email
+#   }
+# }
+
+# mutation {
+# addPost(data: {
+#   userId : "5a099998c0f6a20c44149b0a",
+#   title : "Belum ada judul",
+#   description : "Ini tulisan cuma karena belum ada judul aja gan."
+# })
+# }
+
+# mutation {
+# addComment(data: {
+#   postId : "5a099d6d5a79cc110334212f",
+#   userId : "5a099998c0f6a20c44149b0a",
+#   message : "is New Post ?"
+# })
+# }
